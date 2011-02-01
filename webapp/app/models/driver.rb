@@ -5,7 +5,11 @@ class Driver < ActiveRecord::Base
 		journeys.find(:all, :limit => 10)
 	end
 
+	def most_recent_journey
+		journeys.find(:all, :limit => 1)[0]
+	end
+
 	def most_recent_marker
-		journeys.find(:all, :limit => 1)[0].markers.find(:all, :order => 'time DESC', :limit => 1)[0]
+		most_recent_journey.markers.find(:all, :order => 'time DESC', :limit => 1)[0]
 	end
 end

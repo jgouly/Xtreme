@@ -17,9 +17,13 @@ class MapController < ApplicationController
 
 	def add_marker
 		@marker = Marker.new params[:marker]
+		@driver = Driver.find params[:driver_id]
 		if !params[:marker][:time]
 			@marker.time = Time.now
+		else
+			@marker.time = Time.at(params[:marker][:time].to_i/1000)
 		end 
+		@marker.journey = @driver.most_recent_journey
 		@marker.save
 		render :text => "Marker created"
 	end	

@@ -6940,3 +6940,1097 @@ Rendering map/index
   [4;35;1mJourney Load (0.001478)[0m   [0mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 1[0m
   [4;36;1mMarker Load (0.002549)[0m   [0;1mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC, time DESC LIMIT 1[0m
 Completed in 0.15955 (6 reqs/sec) | Rendering: 0.10490 (65%) | DB: 0.00684 (4%) | 200 OK [http://dobson156.dyndns.org/map]
+
+
+Processing ApplicationController#index (for 149.170.239.45 at 2011-02-01 15:56:03) [GET]
+  Session ID: 7ded136b796b32982a08cfa6be11ea05
+  Parameters: {"marker"=>{"driver_id"=>"3", "time"=>"19700101T000000Europe/Dublin(0,0,0,-1,-3600)", "accln"=>"0.000000", "lat"=>"5.600000", "long"=>"3.400000marker[speed]=23.000000"}}
+
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /home/joey/Xtreme/webapp/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing MapController#index (for 149.170.102.6 at 2011-02-01 15:56:34) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"index", "controller"=>"map"}
+  [4;35;1mDriver Load (0.002785)[0m   [0mSELECT * FROM "drivers" [0m
+Rendering map/index
+  [4;36;1mJourney Load (0.002170)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 1[0m
+  [4;35;1mMarker Load (0.004282)[0m   [0mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC, time DESC LIMIT 1[0m
+Completed in 0.18591 (5 reqs/sec) | Rendering: 0.12375 (66%) | DB: 0.00924 (4%) | 200 OK [http://dobson156.dyndns.org/map]
+
+
+Processing ApplicationController#index (for 149.170.239.45 at 2011-02-01 15:57:12) [GET]
+  Session ID: e1b58d67ebd1b7498abe8df11c901c15
+  Parameters: {"marker"=>{"driver_id"=>"3", "time"=>"19700101T000000Europe/Dublin(0,0,0,-1,-3600)", "accln"=>"0.000000", "lat"=>"5.600000", "long"=>"3.400000marker[speed]=23.000000"}}
+
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /home/joey/Xtreme/webapp/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+  [4;36;1mMarker Load (0.006491)[0m   [0;1mSELECT * FROM "markers" [0m
+
+
+Processing MapController#driver (for 149.170.102.7 at 2011-02-01 15:59:20) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"driver", "id"=>"3", "controller"=>"map"}
+  [4;36;1mDriver Load (0.001644)[0m   [0;1mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+Rendering map/driver
+  [4;35;1mJourney Load (0.001902)[0m   [0mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 10[0m
+Completed in 0.10618 (9 reqs/sec) | Rendering: 0.05169 (48%) | DB: 0.00355 (3%) | 200 OK [http://dobson156.dyndns.org/map/driver/3]
+
+
+Processing MapController#journey (for 149.170.102.5 at 2011-02-01 15:59:22) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"journey", "id"=>"2", "controller"=>"map"}
+  [4;36;1mJourney Load (0.002184)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys"."id" = 2) [0m
+Rendering map/journey
+  [4;35;1mDriver Load (0.001776)[0m   [0mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+  [4;36;1mMarker Load (0.003498)[0m   [0;1mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC LIMIT 10[0m
+Completed in 0.16637 (6 reqs/sec) | Rendering: 0.10498 (63%) | DB: 0.00746 (4%) | 200 OK [http://dobson156.dyndns.org/map/journey/2]
+
+
+Processing ApplicationController#index (for 149.170.239.45 at 2011-02-01 16:06:07) [GET]
+  Session ID: 4d568c66f4536138f82334216fd6311d
+  Parameters: {"marker"=>{"driver_id"=>"3", "time"=>"2011-02-01 15:57:17", "accln"=>"0.000000", "lat"=>"5.600000", "long"=>"3.400000marker[speed]=23.000000"}}
+
+
+ActionController::RoutingError (No route matches "/add_marker" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /home/joey/Xtreme/webapp/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+  [4;36;1mMarker Load (0.008840)[0m   [0;1mSELECT * FROM "markers" [0m
+
+
+Processing ApplicationController#index (for 149.170.102.5 at 2011-02-01 17:05:44) [GET]
+  Session ID: 25249d9282c39163717b667b85a67955
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /home/joey/Xtreme/webapp/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing MapController#index (for 149.170.102.5 at 2011-02-01 17:05:55) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"index", "controller"=>"map"}
+  [4;35;1mDriver Load (0.002936)[0m   [0mSELECT * FROM "drivers" [0m
+Rendering map/index
+  [4;36;1mJourney Load (0.002955)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 1[0m
+  [4;35;1mMarker Load (0.002518)[0m   [0mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC, time DESC LIMIT 1[0m
+Completed in 0.16982 (5 reqs/sec) | Rendering: 0.10555 (62%) | DB: 0.00841 (4%) | 200 OK [http://dobson156.dyndns.org/map]
+
+
+Processing MapController#add_marker (for 149.170.102.7 at 2011-02-01 17:18:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"marker"=>{"driver_id"=>"3", "lat"=>"-34.397", "long"=>"150.644"}, "action"=>"add_marker", "controller"=>"map"}
+
+
+NoMethodError (undefined method `driver_id=' for #<Marker:0xb50ef2f8>):
+    /vendor/rails/activerecord/lib/active_record/attribute_methods.rb:251:in `method_missing'
+    /vendor/rails/activerecord/lib/active_record/base.rb:2361:in `send'
+    /vendor/rails/activerecord/lib/active_record/base.rb:2361:in `attributes='
+    /vendor/rails/activerecord/lib/active_record/base.rb:2360:in `each'
+    /vendor/rails/activerecord/lib/active_record/base.rb:2360:in `attributes='
+    /vendor/rails/activerecord/lib/active_record/base.rb:2130:in `initialize'
+    /app/controllers/map_controller.rb:19:in `new'
+    /app/controllers/map_controller.rb:19:in `add_marker'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /home/joey/Xtreme/webapp/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MapController#add_marker (for 149.170.102.7 at 2011-02-01 17:22:05) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"marker"=>{"driver_id"=>"3", "lat"=>"-34.397", "long"=>"150.644"}, "action"=>"add_marker", "controller"=>"map"}
+
+
+NoMethodError (undefined method `driver_id=' for #<Marker:0xb505697c>):
+    /vendor/rails/activerecord/lib/active_record/attribute_methods.rb:251:in `method_missing'
+    /vendor/rails/activerecord/lib/active_record/base.rb:2361:in `send'
+    /vendor/rails/activerecord/lib/active_record/base.rb:2361:in `attributes='
+    /vendor/rails/activerecord/lib/active_record/base.rb:2360:in `each'
+    /vendor/rails/activerecord/lib/active_record/base.rb:2360:in `attributes='
+    /vendor/rails/activerecord/lib/active_record/base.rb:2130:in `initialize'
+    /app/controllers/map_controller.rb:19:in `new'
+    /app/controllers/map_controller.rb:19:in `add_marker'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /home/joey/Xtreme/webapp/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MapController#add_marker (for 149.170.102.5 at 2011-02-01 17:22:10) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"driver_id"=>"3", "marker"=>{"lat"=>"-34.397", "long"=>"150.644"}, "action"=>"add_marker", "controller"=>"map"}
+  [4;36;1mDriver Load (0.001747)[0m   [0;1mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+  [4;35;1mJourney Load (0.002230)[0m   [0mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 1[0m
+  [4;36;1mMarker Create (0.002572)[0m   [0;1mINSERT INTO "markers" ("time", "journey_id", "speed", "accln", "lat", "long") VALUES('2011-02-01 17:22:10', 2, NULL, NULL, -34.397, 150.644)[0m
+Completed in 0.18601 (5 reqs/sec) | Rendering: 0.00235 (1%) | DB: 0.00655 (3%) | 200 OK [http://dobson156.dyndns.org/map/add_marker?driver_id=3&marker[lat]=-34.397&marker[long]=150.644]
+
+
+Processing ApplicationController#index (for 149.170.239.45 at 2011-02-01 17:22:45) [GET]
+  Session ID: baa85e77d8ac4b65d527cbfb982ed7fc
+  Parameters: {"marker"=>{"driver_id"=>"3", "time"=>"1296518405000", "speed"=>"0.000000", "accln"=>"0.000000", "lat"=>"37.422005", "long"=>"-122.084095"}}
+
+
+ActionController::RoutingError (No route matches "/add_marker" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /home/joey/Xtreme/webapp/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing MapController#index (for 149.170.102.6 at 2011-02-01 17:22:49) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"index", "controller"=>"map"}
+  [4;35;1mDriver Load (0.003445)[0m   [0mSELECT * FROM "drivers" [0m
+Rendering map/index
+  [4;36;1mJourney Load (0.002030)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 1[0m
+  [4;35;1mMarker Load (0.002509)[0m   [0mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC, time DESC LIMIT 1[0m
+Completed in 0.18637 (5 reqs/sec) | Rendering: 0.11084 (59%) | DB: 0.00798 (4%) | 200 OK [http://dobson156.dyndns.org/map/]
+
+
+Processing MapController#driver (for 149.170.102.5 at 2011-02-01 17:22:53) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"driver", "id"=>"3", "controller"=>"map"}
+  [4;36;1mDriver Load (0.001816)[0m   [0;1mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+Rendering map/driver
+  [4;35;1mJourney Load (0.004189)[0m   [0mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 10[0m
+Completed in 0.12714 (7 reqs/sec) | Rendering: 0.06844 (53%) | DB: 0.00601 (4%) | 200 OK [http://dobson156.dyndns.org/map/driver/3]
+
+
+Processing MapController#journey (for 149.170.102.7 at 2011-02-01 17:22:55) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"journey", "id"=>"2", "controller"=>"map"}
+  [4;36;1mJourney Load (0.001806)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys"."id" = 2) [0m
+Rendering map/journey
+  [4;35;1mDriver Load (0.002273)[0m   [0mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+  [4;36;1mMarker Load (0.004157)[0m   [0;1mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC LIMIT 10[0m
+Completed in 0.19116 (5 reqs/sec) | Rendering: 0.12686 (66%) | DB: 0.00824 (4%) | 200 OK [http://dobson156.dyndns.org/map/journey/2]
+
+
+Processing MapController#marker (for 149.170.102.7 at 2011-02-01 17:22:56) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"marker", "id"=>"84", "controller"=>"map"}
+  [4;35;1mMarker Load (0.002710)[0m   [0mSELECT * FROM "markers" WHERE ("markers"."id" = 84) [0m
+Rendering map/marker
+Completed in 0.06860 (14 reqs/sec) | Rendering: 0.01209 (17%) | DB: 0.00271 (3%) | 200 OK [http://dobson156.dyndns.org/map/marker/84]
+
+
+Processing MapController#index (for 149.170.102.7 at 2011-02-01 17:23:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"index", "controller"=>"map"}
+  [4;36;1mDriver Load (0.003473)[0m   [0;1mSELECT * FROM "drivers" [0m
+Rendering map/index
+  [4;35;1mJourney Load (0.002230)[0m   [0mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 1[0m
+  [4;36;1mMarker Load (0.002273)[0m   [0;1mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC, time DESC LIMIT 1[0m
+Completed in 0.15693 (6 reqs/sec) | Rendering: 0.10401 (66%) | DB: 0.00798 (5%) | 200 OK [http://dobson156.dyndns.org/map/]
+
+
+Processing ApplicationController#index (for 149.170.239.45 at 2011-02-01 17:24:16) [GET]
+  Session ID: baac6ae84291c5706a695a4028a4e6b7
+  Parameters: {"driver_id"=>"3", "marker"=>{"time"=>"1296518406000", "speed"=>"0.000000", "accln"=>"0.000000", "lat"=>"150.650000", "long"=>"-34.398000"}}
+
+
+ActionController::RoutingError (No route matches "/add_marker" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /home/joey/Xtreme/webapp/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing MapController#index (for 149.170.102.5 at 2011-02-01 17:24:30) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"index", "controller"=>"map"}
+  [4;35;1mDriver Load (0.003818)[0m   [0mSELECT * FROM "drivers" [0m
+Rendering map/index
+  [4;36;1mJourney Load (0.002032)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 1[0m
+  [4;35;1mMarker Load (0.002330)[0m   [0mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC, time DESC LIMIT 1[0m
+Completed in 0.28359 (3 reqs/sec) | Rendering: 0.23067 (81%) | DB: 0.00818 (2%) | 200 OK [http://dobson156.dyndns.org/map/]
+
+
+Processing MapController#driver (for 149.170.102.7 at 2011-02-01 17:24:33) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"driver", "id"=>"3", "controller"=>"map"}
+  [4;36;1mDriver Load (0.002391)[0m   [0;1mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+Rendering map/driver
+  [4;35;1mJourney Load (0.002061)[0m   [0mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 10[0m
+Completed in 0.12394 (8 reqs/sec) | Rendering: 0.05314 (42%) | DB: 0.00445 (3%) | 200 OK [http://dobson156.dyndns.org/map/driver/3]
+
+
+Processing MapController#journey (for 149.170.102.6 at 2011-02-01 17:24:35) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"journey", "id"=>"2", "controller"=>"map"}
+  [4;36;1mJourney Load (0.001971)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys"."id" = 2) [0m
+Rendering map/journey
+  [4;35;1mDriver Load (0.001566)[0m   [0mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+  [4;36;1mMarker Load (0.004255)[0m   [0;1mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC LIMIT 10[0m
+Completed in 0.17406 (5 reqs/sec) | Rendering: 0.10099 (58%) | DB: 0.00779 (4%) | 200 OK [http://dobson156.dyndns.org/map/journey/2]
+
+
+Processing MapController#journey (for 149.170.102.7 at 2011-02-01 17:24:37) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"journey", "id"=>"2", "controller"=>"map"}
+  [4;35;1mJourney Load (0.001918)[0m   [0mSELECT * FROM "journeys" WHERE ("journeys"."id" = 2) [0m
+Rendering map/journey
+  [4;36;1mDriver Load (0.002327)[0m   [0;1mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+  [4;35;1mMarker Load (0.003577)[0m   [0mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC LIMIT 10[0m
+Completed in 0.17059 (5 reqs/sec) | Rendering: 0.10436 (61%) | DB: 0.00782 (4%) | 200 OK [http://dobson156.dyndns.org/map/journey/2]
+
+
+Processing MapController#journey (for 149.170.102.6 at 2011-02-01 17:28:56) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"journey", "id"=>"2", "controller"=>"map"}
+  [4;36;1mJourney Load (0.002716)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys"."id" = 2) [0m
+Rendering map/journey
+  [4;35;1mDriver Load (0.002180)[0m   [0mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+  [4;36;1mMarker Load (0.003850)[0m   [0;1mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC LIMIT 10[0m
+Completed in 0.45889 (2 reqs/sec) | Rendering: 0.37625 (81%) | DB: 0.00875 (1%) | 200 OK [http://dobson156.dyndns.org/map/journey/2]
+
+
+Processing ApplicationController#index (for 149.170.239.45 at 2011-02-01 17:29:15) [GET]
+  Session ID: 758be8db5314136be5ae2932aa1d168e
+  Parameters: {"driver_id"=>"3", "marker"=>{"time"=>"1296518407000", "speed"=>"0.000000", "accln"=>"0.000000", "lat"=>"150.650000", "long"=>"-34.398000"}}
+
+
+ActionController::RoutingError (No route matches "/add_marker" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /home/joey/Xtreme/webapp/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 149.170.239.45 at 2011-02-01 17:31:37) [GET]
+  Session ID: 73788b26fb63d81447c72ea6f93170e0
+  Parameters: {"driver_id"=>"3", "marker"=>{"time"=>"1296518408000", "speed"=>"0.000000", "accln"=>"0.000000", "lat"=>"150.650000", "long"=>"-34.398000"}}
+
+
+ActionController::RoutingError (No route matches "/add_marker" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /home/joey/Xtreme/webapp/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing MapController#add_marker (for 149.170.239.45 at 2011-02-01 17:33:50) [GET]
+  Session ID: 9a72ed5e609b0ab9ecda736aa973e192
+  Parameters: {"driver_id"=>"3", "marker"=>{"time"=>"1296518409000", "speed"=>"0.000000", "accln"=>"0.000000", "lat"=>"150.650000", "long"=>"-34.398000"}, "action"=>"add_marker", "controller"=>"map"}
+  [4;35;1mDriver Load (0.003607)[0m   [0mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+
+
+TypeError (can't convert NilClass into time):
+    /app/controllers/map_controller.rb:24:in `at'
+    /app/controllers/map_controller.rb:24:in `add_marker'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:580:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /home/joey/Xtreme/webapp/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing MapController#journey (for 149.170.102.7 at 2011-02-01 17:35:13) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"journey", "id"=>"2", "controller"=>"map"}
+  [4;36;1mJourney Load (0.002347)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys"."id" = 2) [0m
+Rendering map/journey
+  [4;35;1mDriver Load (0.002124)[0m   [0mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+  [4;36;1mMarker Load (0.015954)[0m   [0;1mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC LIMIT 10[0m
+Completed in 0.36964 (2 reqs/sec) | Rendering: 0.21373 (57%) | DB: 0.02043 (5%) | 200 OK [http://dobson156.dyndns.org/map/journey/2]
+
+
+Processing MapController#add_marker (for 149.170.239.45 at 2011-02-01 17:36:25) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"driver_id"=>"3", "marker"=>{"time"=>"1296518410000", "speed"=>"0.000000", "accln"=>"0.000000", "lat"=>"150.650000", "long"=>"-34.398000"}, "action"=>"add_marker", "controller"=>"map"}
+  [4;35;1mDriver Load (0.001629)[0m   [0mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+  [4;36;1mJourney Load (0.002545)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 1[0m
+  [4;35;1mMarker Create (0.002330)[0m   [0mINSERT INTO "markers" ("time", "journey_id", "speed", "accln", "lat", "long") VALUES('1970-01-01 00:00:00', 2, 0.0, 0.0, 150.65, -34.398)[0m
+Completed in 0.19615 (5 reqs/sec) | Rendering: 0.01053 (5%) | DB: 0.00650 (3%) | 200 OK [http://dobson156.dyndns.org/map/add_marker?driver_id=3&marker[lat]=150.650000&marker[long]=-34.398000&marker[speed]=0.000000&marker[accln]=0.000000&marker[time]=1296518410000]
+
+
+Processing MapController#journey (for 149.170.102.7 at 2011-02-01 17:36:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"journey", "id"=>"2", "controller"=>"map"}
+  [4;36;1mJourney Load (0.001890)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys"."id" = 2) [0m
+Rendering map/journey
+  [4;35;1mDriver Load (0.002531)[0m   [0mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+  [4;36;1mMarker Load (0.006347)[0m   [0;1mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC LIMIT 10[0m
+Completed in 0.20087 (4 reqs/sec) | Rendering: 0.12839 (63%) | DB: 0.01077 (5%) | 200 OK [http://dobson156.dyndns.org/map/journey/2]
+
+
+Processing MapController#marker (for 149.170.102.5 at 2011-02-01 17:36:35) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"marker", "id"=>"85", "controller"=>"map"}
+  [4;35;1mMarker Load (0.002173)[0m   [0mSELECT * FROM "markers" WHERE ("markers"."id" = 85) [0m
+Rendering map/marker
+Completed in 0.07738 (12 reqs/sec) | Rendering: 0.01772 (22%) | DB: 0.00217 (2%) | 200 OK [http://dobson156.dyndns.org/map/marker/85]
+
+
+Processing MapController#add_marker (for 149.170.102.5 at 2011-02-01 17:37:38) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"driver_id"=>"3", "marker"=>{"time"=>"1296518410000", "speed"=>"0.000000", "accln"=>"0.000000", "lat"=>"150.650000", "long"=>"-34.398000"}, "action"=>"add_marker", "controller"=>"map"}
+  [4;36;1mDriver Load (0.001678)[0m   [0;1mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+  [4;35;1mJourney Load (0.002554)[0m   [0mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 1[0m
+  [4;36;1mMarker Create (0.002292)[0m   [0;1mINSERT INTO "markers" ("time", "journey_id", "speed", "accln", "lat", "long") VALUES('1970-01-01 00:00:00', 2, 0.0, 0.0, 150.65, -34.398)[0m
+Completed in 0.33263 (3 reqs/sec) | Rendering: 0.00236 (0%) | DB: 0.00652 (1%) | 200 OK [http://dobson156.dyndns.org/map/add_marker?driver_id=3&marker[lat]=150.650000&marker[long]=-34.398000&marker[speed]=0.000000&marker[accln]=0.000000&marker[time]=1296518410000]
+
+
+Processing MapController#add_marker (for 149.170.102.7 at 2011-02-01 17:38:14) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"driver_id"=>"3", "marker"=>{"time"=>"1296518410000", "speed"=>"0.000000", "accln"=>"0.000000", "lat"=>"150.650000", "long"=>"-34.398000"}, "action"=>"add_marker", "controller"=>"map"}
+  [4;35;1mDriver Load (0.001802)[0m   [0mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+  [4;36;1mJourney Load (0.002958)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 1[0m
+  [4;35;1mMarker Create (0.002186)[0m   [0mINSERT INTO "markers" ("time", "journey_id", "speed", "accln", "lat", "long") VALUES('2011-02-01 00:00:10', 2, 0.0, 0.0, 150.65, -34.398)[0m
+Completed in 0.17988 (5 reqs/sec) | Rendering: 0.00355 (1%) | DB: 0.00695 (3%) | 200 OK [http://dobson156.dyndns.org/map/add_marker?driver_id=3&marker[lat]=150.650000&marker[long]=-34.398000&marker[speed]=0.000000&marker[accln]=0.000000&marker[time]=1296518410000]
+
+
+Processing MapController#journey (for 149.170.102.5 at 2011-02-01 17:38:19) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"journey", "id"=>"2", "controller"=>"map"}
+  [4;36;1mJourney Load (0.001754)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys"."id" = 2) [0m
+Rendering map/journey
+  [4;35;1mDriver Load (0.001682)[0m   [0mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+  [4;36;1mMarker Load (0.007130)[0m   [0;1mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC LIMIT 10[0m
+Completed in 0.18968 (5 reqs/sec) | Rendering: 0.10876 (57%) | DB: 0.01057 (5%) | 200 OK [http://dobson156.dyndns.org/map/journey/2]
+
+
+Processing MapController#marker (for 149.170.102.7 at 2011-02-01 17:38:24) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"marker", "id"=>"87", "controller"=>"map"}
+  [4;35;1mMarker Load (0.002468)[0m   [0mSELECT * FROM "markers" WHERE ("markers"."id" = 87) [0m
+Rendering map/marker
+Completed in 0.06833 (14 reqs/sec) | Rendering: 0.01172 (17%) | DB: 0.00247 (3%) | 200 OK [http://dobson156.dyndns.org/map/marker/87]
+
+
+Processing ApplicationController#index (for 149.170.102.7 at 2011-02-01 17:38:29) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:112:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:78:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:62:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:509:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /home/joey/Xtreme/webapp/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing MapController#index (for 149.170.102.5 at 2011-02-01 17:38:31) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"index", "controller"=>"map"}
+  [4;36;1mDriver Load (0.003799)[0m   [0;1mSELECT * FROM "drivers" [0m
+Rendering map/index
+  [4;35;1mJourney Load (0.002459)[0m   [0mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 1[0m
+  [4;36;1mMarker Load (0.004400)[0m   [0;1mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC, time DESC LIMIT 1[0m
+Completed in 0.22514 (4 reqs/sec) | Rendering: 0.16823 (74%) | DB: 0.01066 (4%) | 200 OK [http://dobson156.dyndns.org/map]
+
+
+Processing MapController#driver (for 149.170.102.5 at 2011-02-01 17:38:34) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"driver", "id"=>"3", "controller"=>"map"}
+  [4;35;1mDriver Load (0.001972)[0m   [0mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+Rendering map/driver
+  [4;36;1mJourney Load (0.002020)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 10[0m
+Completed in 0.11055 (9 reqs/sec) | Rendering: 0.05475 (49%) | DB: 0.00399 (3%) | 200 OK [http://dobson156.dyndns.org/map/driver/3]
+
+
+Processing MapController#journey (for 149.170.102.7 at 2011-02-01 17:38:36) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"journey", "id"=>"2", "controller"=>"map"}
+  [4;35;1mJourney Load (0.001967)[0m   [0mSELECT * FROM "journeys" WHERE ("journeys"."id" = 2) [0m
+Rendering map/journey
+  [4;36;1mDriver Load (0.002021)[0m   [0;1mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+  [4;35;1mMarker Load (0.007830)[0m   [0mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC LIMIT 10[0m
+Completed in 0.19270 (5 reqs/sec) | Rendering: 0.11783 (61%) | DB: 0.01182 (6%) | 200 OK [http://dobson156.dyndns.org/map/journey/2]
+
+
+Processing MapController#marker (for 149.170.102.6 at 2011-02-01 17:38:38) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"marker", "id"=>"84", "controller"=>"map"}
+  [4;36;1mMarker Load (0.003048)[0m   [0;1mSELECT * FROM "markers" WHERE ("markers"."id" = 84) [0m
+Rendering map/marker
+Completed in 0.07354 (13 reqs/sec) | Rendering: 0.01211 (16%) | DB: 0.00305 (4%) | 200 OK [http://dobson156.dyndns.org/map/marker/84]
+
+
+Processing MapController#index (for 149.170.102.7 at 2011-02-01 17:38:42) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"index", "controller"=>"map"}
+  [4;35;1mDriver Load (0.003025)[0m   [0mSELECT * FROM "drivers" [0m
+Rendering map/index
+  [4;36;1mJourney Load (0.002209)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 1[0m
+  [4;35;1mMarker Load (0.002628)[0m   [0mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC, time DESC LIMIT 1[0m
+Completed in 0.16446 (6 reqs/sec) | Rendering: 0.10961 (66%) | DB: 0.00786 (4%) | 200 OK [http://dobson156.dyndns.org/map/]
+
+
+Processing MapController#index (for 149.170.102.6 at 2011-02-01 17:39:38) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"index", "controller"=>"map"}
+  [4;36;1mDriver Load (0.003299)[0m   [0;1mSELECT * FROM "drivers" [0m
+Rendering map/index
+  [4;35;1mJourney Load (0.002307)[0m   [0mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 1[0m
+  [4;36;1mMarker Load (0.002535)[0m   [0;1mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC, time DESC LIMIT 1[0m
+Completed in 0.16029 (6 reqs/sec) | Rendering: 0.10429 (65%) | DB: 0.00814 (5%) | 200 OK [http://dobson156.dyndns.org/map/]
+
+
+Processing MapController#driver (for 149.170.102.5 at 2011-02-01 17:39:41) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"driver", "id"=>"3", "controller"=>"map"}
+  [4;35;1mDriver Load (0.001494)[0m   [0mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+Rendering map/driver
+  [4;36;1mJourney Load (0.002324)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 10[0m
+Completed in 0.10675 (9 reqs/sec) | Rendering: 0.05108 (47%) | DB: 0.00382 (3%) | 200 OK [http://dobson156.dyndns.org/map/driver/3]
+
+
+Processing MapController#journey (for 149.170.102.7 at 2011-02-01 17:39:43) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"journey", "id"=>"2", "controller"=>"map"}
+  [4;35;1mJourney Load (0.002686)[0m   [0mSELECT * FROM "journeys" WHERE ("journeys"."id" = 2) [0m
+Rendering map/journey
+  [4;36;1mDriver Load (0.001627)[0m   [0;1mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+  [4;35;1mMarker Load (0.005681)[0m   [0mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC LIMIT 10[0m
+Completed in 0.23013 (4 reqs/sec) | Rendering: 0.14438 (62%) | DB: 0.00999 (4%) | 200 OK [http://dobson156.dyndns.org/map/journey/2]
+
+
+Processing MapController#marker (for 149.170.102.7 at 2011-02-01 17:39:45) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"marker", "id"=>"85", "controller"=>"map"}
+  [4;36;1mMarker Load (0.002518)[0m   [0;1mSELECT * FROM "markers" WHERE ("markers"."id" = 85) [0m
+Rendering map/marker
+Completed in 0.08672 (11 reqs/sec) | Rendering: 0.01272 (14%) | DB: 0.00252 (2%) | 200 OK [http://dobson156.dyndns.org/map/marker/85]
+
+
+Processing MapController#index (for 149.170.102.7 at 2011-02-01 17:40:33) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"index", "controller"=>"map"}
+  [4;35;1mDriver Load (0.003846)[0m   [0mSELECT * FROM "drivers" [0m
+Rendering map/index
+  [4;36;1mJourney Load (0.002030)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 1[0m
+  [4;35;1mMarker Load (0.004265)[0m   [0mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC, time DESC LIMIT 1[0m
+Completed in 0.17641 (5 reqs/sec) | Rendering: 0.11882 (67%) | DB: 0.01014 (5%) | 200 OK [http://dobson156.dyndns.org/map/]
+
+
+Processing MapController#add_marker (for 149.170.239.45 at 2011-02-01 17:41:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"driver_id"=>"3", "marker"=>{"time"=>"1296540011000", "speed"=>"0.000000", "accln"=>"0.000000", "lat"=>"150.650000", "long"=>"-34.390000"}, "action"=>"add_marker", "controller"=>"map"}
+  [4;36;1mDriver Load (0.002141)[0m   [0;1mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+  [4;35;1mJourney Load (0.002483)[0m   [0mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 1[0m
+  [4;36;1mMarker Create (0.002973)[0m   [0;1mINSERT INTO "markers" ("time", "journey_id", "speed", "accln", "lat", "long") VALUES('2011-02-01 06:00:11', 2, 0.0, 0.0, 150.65, -34.39)[0m
+Completed in 0.22552 (4 reqs/sec) | Rendering: 0.00102 (0%) | DB: 0.00760 (3%) | 200 OK [http://dobson156.dyndns.org/map/add_marker?driver_id=3&marker[lat]=150.650000&marker[long]=-34.390000&marker[speed]=0.000000&marker[accln]=0.000000&marker[time]=1296540011000]
+
+
+Processing MapController#driver (for 149.170.102.7 at 2011-02-01 17:42:14) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"driver", "id"=>"3", "controller"=>"map"}
+  [4;35;1mDriver Load (0.002218)[0m   [0mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+Rendering map/driver
+  [4;36;1mJourney Load (0.001890)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 10[0m
+Completed in 0.11256 (8 reqs/sec) | Rendering: 0.05608 (49%) | DB: 0.00411 (3%) | 200 OK [http://dobson156.dyndns.org/map/driver/3]
+
+
+Processing MapController#journey (for 149.170.102.5 at 2011-02-01 17:42:16) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"journey", "id"=>"2", "controller"=>"map"}
+  [4;35;1mJourney Load (0.001849)[0m   [0mSELECT * FROM "journeys" WHERE ("journeys"."id" = 2) [0m
+Rendering map/journey
+  [4;36;1mDriver Load (0.001779)[0m   [0;1mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+  [4;35;1mMarker Load (0.007748)[0m   [0mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC LIMIT 10[0m
+Completed in 0.17987 (5 reqs/sec) | Rendering: 0.11012 (61%) | DB: 0.01138 (6%) | 200 OK [http://dobson156.dyndns.org/map/journey/2]
+
+
+Processing MapController#marker (for 149.170.102.7 at 2011-02-01 17:42:21) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"marker", "id"=>"88", "controller"=>"map"}
+  [4;36;1mMarker Load (0.002580)[0m   [0;1mSELECT * FROM "markers" WHERE ("markers"."id" = 88) [0m
+Rendering map/marker
+Completed in 0.08726 (11 reqs/sec) | Rendering: 0.01319 (15%) | DB: 0.00258 (2%) | 200 OK [http://dobson156.dyndns.org/map/marker/88]
+
+
+Processing MapController#marker (for 149.170.102.7 at 2011-02-01 17:42:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"marker", "id"=>"84", "controller"=>"map"}
+  [4;35;1mMarker Load (0.002258)[0m   [0mSELECT * FROM "markers" WHERE ("markers"."id" = 84) [0m
+Rendering map/marker
+Completed in 0.23425 (4 reqs/sec) | Rendering: 0.01229 (5%) | DB: 0.00226 (0%) | 200 OK [http://dobson156.dyndns.org/map/marker/84]
+
+
+Processing MapController#index (for 149.170.102.5 at 2011-02-01 17:42:30) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"index", "controller"=>"map"}
+  [4;36;1mDriver Load (0.002788)[0m   [0;1mSELECT * FROM "drivers" [0m
+Rendering map/index
+  [4;35;1mJourney Load (0.002388)[0m   [0mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 1[0m
+  [4;36;1mMarker Load (0.003323)[0m   [0;1mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC, time DESC LIMIT 1[0m
+Completed in 0.16243 (6 reqs/sec) | Rendering: 0.10877 (66%) | DB: 0.00850 (5%) | 200 OK [http://dobson156.dyndns.org/map/]
+
+
+Processing MapController#add_marker (for 149.170.239.45 at 2011-02-01 17:45:59) [GET]
+  Session ID: a873ba37c7e39b1e64ceaefbf3567cf6
+  Parameters: {"driver_id"=>"3", "marker"=>{"time"=>"1296540012000", "speed"=>"0.000000", "accln"=>"0.000000", "lat"=>"150.650000", "long"=>"-34.390000"}, "action"=>"add_marker", "controller"=>"map"}
+  [4;35;1mDriver Load (0.001524)[0m   [0mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+  [4;36;1mJourney Load (0.003015)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 1[0m
+  [4;35;1mMarker Create (0.002042)[0m   [0mINSERT INTO "markers" ("time", "journey_id", "speed", "accln", "lat", "long") VALUES('2011-02-01 06:00:12', 2, 0.0, 0.0, 150.65, -34.39)[0m
+Completed in 0.18980 (5 reqs/sec) | Rendering: 0.00112 (0%) | DB: 0.00658 (3%) | 200 OK [http://dobson156.dyndns.org/map/add_marker?driver_id=3&marker[lat]=150.650000&marker[long]=-34.390000&marker[speed]=0.000000&marker[accln]=0.000000&marker[time]=1296540012000]
+
+
+Processing MapController#index (for 149.170.102.5 at 2011-02-01 17:46:24) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"index", "controller"=>"map"}
+  [4;36;1mDriver Load (0.003201)[0m   [0;1mSELECT * FROM "drivers" [0m
+Rendering map/index
+  [4;35;1mJourney Load (0.002185)[0m   [0mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 1[0m
+  [4;36;1mMarker Load (0.008635)[0m   [0;1mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC, time DESC LIMIT 1[0m
+Completed in 0.16604 (6 reqs/sec) | Rendering: 0.10713 (64%) | DB: 0.01402 (8%) | 200 OK [http://dobson156.dyndns.org/map/]
+
+
+Processing MapController#driver (for 149.170.102.6 at 2011-02-01 17:46:27) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"driver", "id"=>"3", "controller"=>"map"}
+  [4;35;1mDriver Load (0.002818)[0m   [0mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+Rendering map/driver
+  [4;36;1mJourney Load (0.001942)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 10[0m
+Completed in 0.13614 (7 reqs/sec) | Rendering: 0.06885 (50%) | DB: 0.00476 (3%) | 200 OK [http://dobson156.dyndns.org/map/driver/3]
+
+
+Processing MapController#journey (for 149.170.102.5 at 2011-02-01 17:46:29) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"journey", "id"=>"2", "controller"=>"map"}
+  [4;35;1mJourney Load (0.003966)[0m   [0mSELECT * FROM "journeys" WHERE ("journeys"."id" = 2) [0m
+Rendering map/journey
+  [4;36;1mDriver Load (0.001697)[0m   [0;1mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+  [4;35;1mMarker Load (0.008771)[0m   [0mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC LIMIT 10[0m
+Completed in 0.20069 (4 reqs/sec) | Rendering: 0.11887 (59%) | DB: 0.01443 (7%) | 200 OK [http://dobson156.dyndns.org/map/journey/2]
+
+
+Processing MapController#marker (for 149.170.102.7 at 2011-02-01 17:46:42) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"marker", "id"=>"89", "controller"=>"map"}
+  [4;36;1mMarker Load (0.002745)[0m   [0;1mSELECT * FROM "markers" WHERE ("markers"."id" = 89) [0m
+Rendering map/marker
+Completed in 0.08070 (12 reqs/sec) | Rendering: 0.01255 (15%) | DB: 0.00274 (3%) | 200 OK [http://dobson156.dyndns.org/map/marker/89]
+
+
+Processing MapController#index (for 149.170.102.6 at 2011-02-01 17:46:58) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"index", "controller"=>"map"}
+  [4;35;1mDriver Load (0.003660)[0m   [0mSELECT * FROM "drivers" [0m
+Rendering map/index
+  [4;36;1mJourney Load (0.002527)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 1[0m
+  [4;35;1mMarker Load (0.002781)[0m   [0mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC, time DESC LIMIT 1[0m
+Completed in 0.17667 (5 reqs/sec) | Rendering: 0.11067 (62%) | DB: 0.00897 (5%) | 200 OK [http://dobson156.dyndns.org/map/]
+
+
+Processing MapController#driver (for 149.170.102.7 at 2011-02-01 17:47:31) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"driver", "id"=>"3", "controller"=>"map"}
+  [4;36;1mDriver Load (0.002790)[0m   [0;1mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+Rendering map/driver
+  [4;35;1mJourney Load (0.002477)[0m   [0mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 10[0m
+Completed in 0.11737 (8 reqs/sec) | Rendering: 0.05011 (42%) | DB: 0.00527 (4%) | 200 OK [http://dobson156.dyndns.org/map/driver/3]
+
+
+Processing MapController#journey (for 149.170.102.7 at 2011-02-01 17:47:33) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"journey", "id"=>"2", "controller"=>"map"}
+  [4;36;1mJourney Load (0.001705)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys"."id" = 2) [0m
+Rendering map/journey
+  [4;35;1mDriver Load (0.001839)[0m   [0mSELECT * FROM "drivers" WHERE ("drivers"."id" = 3) [0m
+  [4;36;1mMarker Load (0.009033)[0m   [0;1mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC LIMIT 10[0m
+Completed in 0.20051 (4 reqs/sec) | Rendering: 0.12348 (61%) | DB: 0.01258 (6%) | 200 OK [http://dobson156.dyndns.org/map/journey/2]
+
+
+Processing MapController#marker (for 149.170.102.5 at 2011-02-01 17:47:37) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"marker", "id"=>"84", "controller"=>"map"}
+  [4;35;1mMarker Load (0.002021)[0m   [0mSELECT * FROM "markers" WHERE ("markers"."id" = 84) [0m
+Rendering map/marker
+Completed in 0.07239 (13 reqs/sec) | Rendering: 0.01205 (16%) | DB: 0.00202 (2%) | 200 OK [http://dobson156.dyndns.org/map/marker/84]
+
+
+Processing MapController#marker (for 149.170.102.7 at 2011-02-01 17:47:42) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"marker", "id"=>"83", "controller"=>"map"}
+  [4;36;1mMarker Load (0.003369)[0m   [0;1mSELECT * FROM "markers" WHERE ("markers"."id" = 83) [0m
+Rendering map/marker
+Completed in 0.10020 (9 reqs/sec) | Rendering: 0.01823 (18%) | DB: 0.00337 (3%) | 200 OK [http://dobson156.dyndns.org/map/marker/83]
+
+
+Processing MapController#marker (for 149.170.102.7 at 2011-02-01 17:47:47) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"marker", "id"=>"89", "controller"=>"map"}
+  [4;35;1mMarker Load (0.002228)[0m   [0mSELECT * FROM "markers" WHERE ("markers"."id" = 89) [0m
+Rendering map/marker
+Completed in 0.08162 (12 reqs/sec) | Rendering: 0.01203 (14%) | DB: 0.00223 (2%) | 200 OK [http://dobson156.dyndns.org/map/marker/89]
+
+
+Processing MapController#marker (for 149.170.102.7 at 2011-02-01 17:47:50) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"marker", "id"=>"84", "controller"=>"map"}
+  [4;36;1mMarker Load (0.002151)[0m   [0;1mSELECT * FROM "markers" WHERE ("markers"."id" = 84) [0m
+Rendering map/marker
+Completed in 0.11269 (8 reqs/sec) | Rendering: 0.02312 (20%) | DB: 0.00215 (1%) | 200 OK [http://dobson156.dyndns.org/map/marker/84]
+
+
+Processing MapController#index (for 149.170.102.6 at 2011-02-01 17:48:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--049f22552cde537ed5af42ae1a0a5129ead79500
+  Parameters: {"action"=>"index", "controller"=>"map"}
+  [4;35;1mDriver Load (0.002856)[0m   [0mSELECT * FROM "drivers" [0m
+Rendering map/index
+  [4;36;1mJourney Load (0.003027)[0m   [0;1mSELECT * FROM "journeys" WHERE ("journeys".driver_id = 3) ORDER BY created_at DESC LIMIT 1[0m
+  [4;35;1mMarker Load (0.004458)[0m   [0mSELECT * FROM "markers" WHERE ("markers".journey_id = 2) ORDER BY time DESC, time DESC LIMIT 1[0m
+Completed in 0.17408 (5 reqs/sec) | Rendering: 0.11151 (64%) | DB: 0.01034 (5%) | 200 OK [http://dobson156.dyndns.org/map/]
