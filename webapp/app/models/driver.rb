@@ -1,12 +1,11 @@
 class Driver < ActiveRecord::Base
-	has_many :markers
+	has_many :journeys, :order => 'created_at DESC'
 
-	def recent_markers
-		markers.find(:all, :order => 'time DESC', :limit => 10)
+	def recent_journeys
+		journeys.find(:all, :limit => 10)
 	end
 
 	def most_recent_marker
-		markers.find(:all, :order => 'time DESC', :limit => 
-1)[0]
+		journeys.find(:all, :limit => 1)[0].markers.find(:all, :order => 'time DESC', :limit => 1)[0]
 	end
 end

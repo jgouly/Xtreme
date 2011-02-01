@@ -9,11 +9,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110131181042) do
+ActiveRecord::Schema.define(:version => 20110201114215) do
 
   create_table "drivers", :force => true do |t|
     t.string "name"
     t.string "vehicle"
+  end
+
+  create_table "journeys", :force => true do |t|
+    t.integer  "driver_id"
+    t.datetime "created_at"
+    t.datetime "finished_at"
   end
 
   create_table "markers", :force => true do |t|
@@ -21,8 +27,8 @@ ActiveRecord::Schema.define(:version => 20110131181042) do
     t.float    "lat"
     t.float    "speed"
     t.float    "accln"
-    t.datetime "time",      :null => false
-    t.integer  "driver_id"
+    t.datetime "time",       :null => false
+    t.integer  "journey_id"
   end
 
 end

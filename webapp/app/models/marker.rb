@@ -1,3 +1,3 @@
 class Marker < ActiveRecord::Base
-	belongs_to :driver
+	belongs_to :journey
 end

@@ -1,7 +1,7 @@
 <h2>Driver: <%= @driver.name %></h2>
 <p>ID: <%= @driver.name %><br />
 Vehicle: <%= @driver.vehicle %></p>
-<h3>Recent Markers</h3>
-<% @driver.recent_markers.each do |m| %>
-	<%= link_to m.time, :action => "marker", :id => m %><br />
+<h3>Recent Journeys</h3>
+<% @driver.recent_journeys.each do |j| %>
+	<%= link_to j.id, :action => "journey", :id => j %><br />
 <% end %>

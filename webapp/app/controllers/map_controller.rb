@@ -11,6 +11,10 @@ class MapController < ApplicationController
 		@marker = Marker.find params[:id]
 	end
 
+	def journey
+		@journey = Journey.find params[:id]
+	end
+
 	def add_marker
 		@marker = Marker.new params[:marker]
 		if !params[:marker][:time]
