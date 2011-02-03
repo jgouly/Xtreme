@@ -5,11 +5,24 @@ class Driver < ActiveRecord::Base
 		journeys.find(:all, :limit => 10)
 	end
 
+	def most_recent_open_journey
+		journeys.select{|j| j.finished_at == nil }[0]
+	end	
+
+	def close_recent_journey
+		if j = most_recent_journey
+			j.finished_at = Time.now
+			j.save
+		end
+	end
+
 	def most_recent_journey
-		journeys.find(:all, :limit => 1)[0]
+		journeys.find(:first)
 	end
 
 	def most_recent_marker
-		most_recent_journey.markers.find(:all, :order => 'time DESC', :limit => 1)[0]
+		if j = most_recent_open_journey
+			j.markers.find(:first)
+		end
 	end
 end

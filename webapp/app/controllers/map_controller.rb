@@ -22,9 +22,24 @@ class MapController < ApplicationController
 			@marker.time = Time.now
 		else
 			@marker.time = Time.at(params[:marker][:time].to_i/1000)
-		end 
-		@marker.journey = @driver.most_recent_journey
-		@marker.save
+		end
+		if j = @driver.most_recent_open_journey 
+			@marker.journey = j
+			@marker.save
+		end
 		render :text => "Marker created"
+	end
+
+	def new_journey
+		@driver = Driver.find params[:id]
+		@driver.close_recent_journey
+		@driver.journeys.create
+		render :text => "New Journey"
+	end
+
+	def end_journey
+		@driver = Driver.find params[:id]
+		@driver.close_recent_journey
+		render :text => "Journey finished"
 	end	
 end

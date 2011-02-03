@@ -5,4 +5,8 @@ class Journey < ActiveRecord::Base
 	def recent_markers
 		markers.find(:all, :limit => 10)
 	end
+
+	def finished_at_str
+		finished_at ? finished_at : "in progress"
+	end
 end
