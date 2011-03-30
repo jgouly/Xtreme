@@ -10,80 +10,9 @@
 </style>
 <title>Team Extreme</title>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-<script type="text/javascript">
-var map;
-var <%= (0..@drivers.size-1).map{|i| "marker#{i}"}.join "," %>;
-var <%= (0..@drivers.size-1).map{|i| "info#{i}"}.join "," %>;  
-function initialize() {
-    var myLatlng = new google.maps.LatLng(53.472, -2.240);
-    var myOptions = {
-      zoom: 13,
-      center: myLatlng,
-disableDefaultUI: true,
-  zoomControl: true,
-zoomControlOptions: { style: google.maps.ZoomControlStyle.LARGE
-},      
-mapTypeId: google.maps.MapTypeId.ROADMAP
-    }
-   map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-   <% @drivers.each_with_index do |d, i| %>
-	<% m = d.most_recent_marker %>
-	<% if m %>
-	marker<%= i %> = new google.maps.Marker({
-	position: new google.maps.LatLng(<%= m.lat %>, <%= m.long %>),
-	map: map,
-	title: "<%= d.name %>"
-	});
-	info<%= i %> = new google.maps.InfoWindow({
-		content: '<p>Driver: <%= link_to d.name, :action => :driver, :id => d %></p>'+
-                 '<p>Journey: <%= link_to d.most_recent_journey.id, :action => :journey, :id => d.most_recent_journey %></p>'
-	});
-	google.maps.event.addListener(marker<%= i %>, 'click', 
-function(){
-	info<%= i %>.open(map, marker<%= i %>);});
-	<% end %>
-  <% end %>
-// HOME LOOOL
-function HomeControl(controlDiv, map) {
-
- // Set CSS styles for the DIV containing the control
- // Setting padding to 5 px will offset the control
- // from the edge of the map
- controlDiv.style.padding = '5px';
-
- // Set CSS for the control border
- var controlUI = document.createElement('DIV');
- controlUI.style.backgroundColor = 'white';
- controlUI.style.borderStyle = 'solid';
- controlUI.style.borderWidth = '2px';
- //controlUI.style.cursor = 'pointer';
- controlUI.style.textAlign = 'left';
- controlUI.title = 'List of Drivers';
- controlDiv.appendChild(controlUI);
-
- // Set CSS for the control interior
- var controlText = document.createElement('DIV');
-controlText.style.paddingTop = '0px';
- controlText.style.fontFamily = 'Arial,sans-serif';
- controlText.style.fontSize = '12px';
- controlText.style.paddingLeft = '4px';
- controlText.style.paddingRight = '4px';
-controlText.innerHTML = '<h4>Drivers</h4>' + 
-'<% @drivers.each_with_index do |d,i| %><p><%= link_to "+", :action=>:driver, :id => d %> <a href="#" onclick="map.panTo(marker<%= i %>.getPosition());info<%= i %>.open(map, marker<%= i %>);"><%= d.name %></a></p><% end %>';
-
- controlUI.appendChild(controlText);
-}
-
-// HOME LOL
- var homeControlDiv = document.createElement('DIV');
-  var homeControl = new HomeControl(homeControlDiv, map);
-homeControlDiv.index = 1;
-  map.controls[google.maps.ControlPosition.RIGHT_TOP].push(homeControlDiv);
-}
-</script>
+<script type="text/javascript" src="/map/index_js"></script>
 </head>
 <body onload="initialize()">
   <div id="map_canvas"></div>
 </body>
 </html>
-

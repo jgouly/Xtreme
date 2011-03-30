@@ -15,6 +15,11 @@ class MapController < ApplicationController
 		@journey = Journey.find params[:id]
 	end
 
+	def journey_js
+		@journey = Journey.find params[:id]
+		render :action => 'journey_js', :content_type => 'text/javascript'
+	end
+
 	def add_marker
 		@marker = Marker.new params[:marker]
 		@driver = Driver.find params[:driver_id]
@@ -41,5 +46,10 @@ class MapController < ApplicationController
 		@driver = Driver.find params[:id]
 		@driver.close_recent_journey
 		render :text => "Journey finished"
+	end
+
+	def index_js
+		@drivers = Driver.find :all
+		render :action => 'index_js', :content_type => "text/javascript" 
 	end	
 end
